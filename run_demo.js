@@ -44,7 +44,7 @@ var JSSDKDemo = (function() {
         var facevideo_node = document.getElementById("facevideo-node");
         detector = new affdex.CameraDetector(facevideo_node);
         detector.detectAllEmojis();
-        
+
         detector.addEventListener("onWebcamConnectSuccess", function() {
             show_message("msg-starting-webcam");
         });
@@ -232,7 +232,7 @@ var JSSDKDemo = (function() {
             
             $("#try-again").one("click", function() {
                 fade_and_remove("#" + this.id);
-                $("#results").fadeOut(500, function() {
+                $("#results").fadeOut(4, function() {
                     $(this).empty();
                     $(this).css("display", "block")
                 });
