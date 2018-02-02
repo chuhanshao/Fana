@@ -1,0 +1,65 @@
+body {
+    background-color: #111111;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.demo-message {
+    display: none;
+}
+
+#messages {
+    padding-top: 15px;
+    height: 10px;
+}
+
+#facevideo-node {
+    width: 640px;
+    height: 480px;
+    display: inline-block;
+}
+
+#try-again {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 640px;
+    height: 100%;
+    margin-left: -320px;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#instructions {
+    display: none;
+}
+
+#video-container {
+    display: none;
+}
+
+#chart-container {
+    display: none;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
