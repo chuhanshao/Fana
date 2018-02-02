@@ -53,7 +53,7 @@ body {
     display: none;
 }
 
-#chart-container {
+/*#chart-container {
     display: none;
     height: 300px;
     margin-top: 25px;
@@ -62,4 +62,4 @@ body {
 
 .canvasjs-chart-credit {
     display: none;
-}
+}*/

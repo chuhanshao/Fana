@@ -35,7 +35,7 @@ var JSSDKDemo = (function() {
     var emoji_to_color = {flushed: "rgba(244,127,56,1)", rage: "rgba(232,63,111,1)", scream: "rgba(141,105,111,1)", stuckOutTongue: "rgba(50,147,111,1)", smiley: "rgba(42,132,138,1)", kissing: "rgba(34,116,165,1)", smirk: "rgba(145,154,83,1)", wink: "rgba(255,191,0,1)"};
     var emoji_to_giphy_keywords = {flushed: "embarrassed", rage: "angry", scream: "scream", stuckOutTongue: "tongue out", smiley: "smile", kissing: "kissing", smirk: "smirk", wink: "wink"};
     
-    var GIF_COUNT = 12;
+    var GIF_COUNT = 4;
     var num_gifs_loaded = 0;
     
     var run = function() {
@@ -67,6 +67,7 @@ var JSSDKDemo = (function() {
             show_message("instructions");
         });
         
+        
         detector.addEventListener("onImageResultsSuccess", function(faces, image, timestamp) {
             if (capture_frames) {
                 if (frames_since_last_face > 300 && face_visible) {
@@ -93,6 +94,7 @@ var JSSDKDemo = (function() {
                         set_emoji_color(data_list[i], color);
                     }
                     
+
                     // determine dominant emoji
                     var max_emoji = "flushed";
                     var max_value = emoji_values["flushed"];
@@ -106,6 +108,7 @@ var JSSDKDemo = (function() {
                         }
                     }
                     
+
                     // update dominant_emoji and frames_with_dominant_emoji
                     if (max_value > dominance_value_threshold[max_emoji]) {
                         if (max_emoji === dominant_emoji) {
